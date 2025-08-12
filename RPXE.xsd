@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RPXE" targetNamespace="http://tempuri.org/RPXE.xsd" xmlns:mstns="http://tempuri.org/RPXE.xsd" xmlns="http://tempuri.org/RPXE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="qlxmshopConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="qlxmshopConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLXM.Properties.Settings.GlobalReference.Default.qlxmshopConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RPBanXeTableAdapter" GeneratorDataComponentClassName="RPBanXeTableAdapter" Name="RPBanXe" UserDataComponentName="RPBanXeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="qlxmshopConnectionString (Settings)" DbObjectName="qlxmshop.dbo.RPBanXe" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MaXe, TenDX, SoKhung, SoMay, MaHD, MaKH, NamSX, DonGia, NgayLap, MauSac FROM dbo.RPBanXe</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MaXe" DataSetColumn="MaXe" />
+              <Mapping SourceColumn="TenDX" DataSetColumn="TenDX" />
+              <Mapping SourceColumn="SoKhung" DataSetColumn="SoKhung" />
+              <Mapping SourceColumn="SoMay" DataSetColumn="SoMay" />
+              <Mapping SourceColumn="MaHD" DataSetColumn="MaHD" />
+              <Mapping SourceColumn="MaKH" DataSetColumn="MaKH" />
+              <Mapping SourceColumn="NamSX" DataSetColumn="NamSX" />
+              <Mapping SourceColumn="DonGia" DataSetColumn="DonGia" />
+              <Mapping SourceColumn="NgayLap" DataSetColumn="NgayLap" />
+              <Mapping SourceColumn="MauSac" DataSetColumn="MauSac" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RPXE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="RPXE" msprop:Generator_UserDSName="RPXE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RPBanXe" msprop:Generator_TableClassName="RPBanXeDataTable" msprop:Generator_TableVarName="tableRPBanXe" msprop:Generator_TablePropName="RPBanXe" msprop:Generator_RowDeletingName="RPBanXeRowDeleting" msprop:Generator_RowChangingName="RPBanXeRowChanging" msprop:Generator_RowEvHandlerName="RPBanXeRowChangeEventHandler" msprop:Generator_RowDeletedName="RPBanXeRowDeleted" msprop:Generator_UserTableName="RPBanXe" msprop:Generator_RowChangedName="RPBanXeRowChanged" msprop:Generator_RowEvArgName="RPBanXeRowChangeEvent" msprop:Generator_RowClassName="RPBanXeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MaXe" msprop:Generator_ColumnVarNameInTable="columnMaXe" msprop:Generator_ColumnPropNameInRow="MaXe" msprop:Generator_ColumnPropNameInTable="MaXeColumn" msprop:Generator_UserColumnName="MaXe" type="xs:int" />
+              <xs:element name="TenDX" msprop:Generator_ColumnVarNameInTable="columnTenDX" msprop:Generator_ColumnPropNameInRow="TenDX" msprop:Generator_ColumnPropNameInTable="TenDXColumn" msprop:Generator_UserColumnName="TenDX" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SoKhung" msprop:Generator_ColumnVarNameInTable="columnSoKhung" msprop:Generator_ColumnPropNameInRow="SoKhung" msprop:Generator_ColumnPropNameInTable="SoKhungColumn" msprop:Generator_UserColumnName="SoKhung" type="xs:int" />
+              <xs:element name="SoMay" msprop:Generator_ColumnVarNameInTable="columnSoMay" msprop:Generator_ColumnPropNameInRow="SoMay" msprop:Generator_ColumnPropNameInTable="SoMayColumn" msprop:Generator_UserColumnName="SoMay" type="xs:int" />
+              <xs:element name="MaHD" msprop:Generator_ColumnVarNameInTable="columnMaHD" msprop:Generator_ColumnPropNameInRow="MaHD" msprop:Generator_ColumnPropNameInTable="MaHDColumn" msprop:Generator_UserColumnName="MaHD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaKH" msprop:Generator_ColumnVarNameInTable="columnMaKH" msprop:Generator_ColumnPropNameInRow="MaKH" msprop:Generator_ColumnPropNameInTable="MaKHColumn" msprop:Generator_UserColumnName="MaKH">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NamSX" msprop:Generator_ColumnVarNameInTable="columnNamSX" msprop:Generator_ColumnPropNameInRow="NamSX" msprop:Generator_ColumnPropNameInTable="NamSXColumn" msprop:Generator_UserColumnName="NamSX" type="xs:int" minOccurs="0" />
+              <xs:element name="DonGia" msprop:Generator_ColumnVarNameInTable="columnDonGia" msprop:Generator_ColumnPropNameInRow="DonGia" msprop:Generator_ColumnPropNameInTable="DonGiaColumn" msprop:Generator_UserColumnName="DonGia" type="xs:int" minOccurs="0" />
+              <xs:element name="NgayLap" msprop:Generator_ColumnVarNameInTable="columnNgayLap" msprop:Generator_ColumnPropNameInRow="NgayLap" msprop:Generator_ColumnPropNameInTable="NgayLapColumn" msprop:Generator_UserColumnName="NgayLap" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MauSac" msprop:Generator_ColumnVarNameInTable="columnMauSac" msprop:Generator_ColumnPropNameInRow="MauSac" msprop:Generator_ColumnPropNameInTable="MauSacColumn" msprop:Generator_UserColumnName="MauSac" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RPBanXe" />
+      <xs:field xpath="mstns:MaXe" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

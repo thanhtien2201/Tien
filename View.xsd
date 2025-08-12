@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="View" targetNamespace="http://tempuri.org/View.xsd" xmlns:mstns="http://tempuri.org/View.xsd" xmlns="http://tempuri.org/View.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="qlxmshopConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="qlxmshopConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLXM.Properties.Settings.GlobalReference.Default.qlxmshopConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_PhieuNhapTableAdapter" GeneratorDataComponentClassName="v_PhieuNhapTableAdapter" Name="v_PhieuNhap" UserDataComponentName="v_PhieuNhapTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="qlxmshopConnectionString (Settings)" DbObjectName="qlxmshop.dbo.v_PhieuNhap" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MaDX, MaNV, TenNCC, MaPhieuNhap, Soluong FROM dbo.v_PhieuNhap</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MaDX" DataSetColumn="MaDX" />
+              <Mapping SourceColumn="MaNV" DataSetColumn="MaNV" />
+              <Mapping SourceColumn="TenNCC" DataSetColumn="TenNCC" />
+              <Mapping SourceColumn="MaPhieuNhap" DataSetColumn="MaPhieuNhap" />
+              <Mapping SourceColumn="Soluong" DataSetColumn="Soluong" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="View" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="View" msprop:Generator_UserDSName="View">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_PhieuNhap" msprop:Generator_TableClassName="v_PhieuNhapDataTable" msprop:Generator_TableVarName="tablev_PhieuNhap" msprop:Generator_TablePropName="v_PhieuNhap" msprop:Generator_RowDeletingName="v_PhieuNhapRowDeleting" msprop:Generator_RowChangingName="v_PhieuNhapRowChanging" msprop:Generator_RowEvHandlerName="v_PhieuNhapRowChangeEventHandler" msprop:Generator_RowDeletedName="v_PhieuNhapRowDeleted" msprop:Generator_UserTableName="v_PhieuNhap" msprop:Generator_RowChangedName="v_PhieuNhapRowChanged" msprop:Generator_RowEvArgName="v_PhieuNhapRowChangeEvent" msprop:Generator_RowClassName="v_PhieuNhapRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MaDX" msprop:Generator_ColumnVarNameInTable="columnMaDX" msprop:Generator_ColumnPropNameInRow="MaDX" msprop:Generator_ColumnPropNameInTable="MaDXColumn" msprop:Generator_UserColumnName="MaDX">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaNV" msprop:Generator_ColumnVarNameInTable="columnMaNV" msprop:Generator_ColumnPropNameInRow="MaNV" msprop:Generator_ColumnPropNameInTable="MaNVColumn" msprop:Generator_UserColumnName="MaNV">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenNCC" msprop:Generator_ColumnVarNameInTable="columnTenNCC" msprop:Generator_ColumnPropNameInRow="TenNCC" msprop:Generator_ColumnPropNameInTable="TenNCCColumn" msprop:Generator_UserColumnName="TenNCC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaPhieuNhap" msprop:Generator_ColumnVarNameInTable="columnMaPhieuNhap" msprop:Generator_ColumnPropNameInRow="MaPhieuNhap" msprop:Generator_ColumnPropNameInTable="MaPhieuNhapColumn" msprop:Generator_UserColumnName="MaPhieuNhap">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Soluong" msprop:Generator_ColumnVarNameInTable="columnSoluong" msprop:Generator_ColumnPropNameInRow="Soluong" msprop:Generator_ColumnPropNameInTable="SoluongColumn" msprop:Generator_UserColumnName="Soluong" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
